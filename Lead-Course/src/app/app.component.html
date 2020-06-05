@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <h5>Lead Course</h5>
+  </ul>
+</nav>
+
+<br>
+<br>
+
+<div class="container">
+<!-- <div class="row">
+   <div class="col-lg-6">
+      <input matInput placeholder="sarch by course,author name" value="">
+   </div>
+   <div class="col-lg-6">
+      <input matInput placeholder="search by category" value="">
+  </div>
+</div> -->
+</div>
+
+<br>
+<br>
+
+<div class="container">
+  <mat-table #table [dataSource]="dataSource">
+
+   
+    <ng-container matColumnDef="popularity">
+      <mat-header-cell *matHeaderCellDef> Popularity </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.popularity}} </mat-cell>
+    </ng-container>
+
+   
+    <ng-container matColumnDef="author">
+      <mat-header-cell *matHeaderCellDef> Author </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.author}} </mat-cell>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="category">
+      <mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.category}} </mat-cell>
+    </ng-container> -->
+
+    <ng-container matColumnDef="difficulty_level">
+      <mat-header-cell *matHeaderCellDef>Difficulty Level </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.difficulty_level}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

@@ -1,0 +1,32 @@
+[
+    {
+      "popularity": 83.0,
+      "author": "Victor Fleming",
+      "category": [
+          "Math",
+        " Finance"
+      ],
+      "difficulty_level": 8.3,
+      "name": "Economics"
+    },
+    {
+      "popularity": 88.0,
+      "author": "George Lucas",
+      "category": [
+        "Science",
+        " Astronomy"
+      ],
+      "difficulty_level": 8.8,
+      "name": "Star Science"
+    },
+    {
+      "popularity": 66.0,
+      "author": "Giovanni Pastrone",
+      "category": [
+        "Medicine",
+        "Human Analysis"
+      ],
+      "difficulty_level": 6.6,
+      "name": "Psychology"
+    }
+  ]
